@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+:root {
+    --main: #57b179;
+    --dark: #3f8359;
+}
+
+/* all navbar section */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.topnav {
+    background-color: var(--main);
+    overflow: hidden;
+    height: 115px;
+    position: relative;
+
+}
+
+.topnav header {
+    padding-bottom: 2px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.topnav ul {
+    
+    list-style-type: none;
+    margin: 0;
+    padding-bottom: 10px;
+    margin-left: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+ 
+}
+
+.topnav-fixed ul {
+    position: fixed;
+    top: 0;
+    width: 100%; 
+}
+
+.topnav-fixed li {
+    transition: opacity 1s ease;
+    background-color: var(--main);
+    padding: 10px;
+    margin: 0px 0px;
+}
+.topnav li {
+    
+    padding: 10px;
+    margin: 0 0px;
+}
+
+.topnav a {
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    color: var(--dark);
+}
+.search-container {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.search-container input[type="text"] {
+    padding: 8px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.search-container button {
+    padding: 8px 12px;
+    background: var(--dark);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+   opacity: 50%;
+}
+
+/*genre sections*/
+
+.genres-cont {
+    margin-top: 5rem;
+
+
+}
+.genre-sect h3 {
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.img {
+    max-width: 6.250em; 
+    height: auto;
+    padding: 2.5px;
+}
+
+.img:hover {
+   opacity: 50%;
+  
+}
+
+.genre-sect {
+    padding: 15px;
+    padding-top: 2px;
+    background-color: rgb(233, 232, 232);
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    margin-left: 20%;
+    margin-right: 20%;
+  position: relative;
+  z-index: 1;
+}
+
+.genre-sect::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: calc(33.33% - 15px); 
+    background-color: var(--dark);
+}

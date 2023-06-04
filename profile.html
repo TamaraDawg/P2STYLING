@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Picture Upload</title>
+    <link rel="stylesheet" type="text/css" href="./assets/profile.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Profile Picture Upload</h1>
+        <p> Personalise Your Account</p>
+        <form>
+            <div class="profile-picture">
+                <label for="upload">
+                    <img id="preview" src="./assets/images/default-avatar.jpg" alt="Profile Picture">
+                </label>
+                <!--figured that there was a way to upload files this easily, click on the profile pic image when
+                u open this file. lmao. will need this to be linked with Miran's code to actually store the upload
+            and show. I will need a mock up by tmr so I can create a class to alter the image sizing -->
+                <input type="file" id="upload" accept="image/*">
+            </div>
+            <!-- uploads into the abyss-->
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+</body>
+</html>
